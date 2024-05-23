@@ -1,8 +1,10 @@
 import streamlit as st
 import pandas as pd
-import joblib
+#import joblib
+import pickle
 
-model = joblib.load(r'best_model.sav')
+#model = joblib.load(r'best_model.sav')
+model = pickle.load(open(r'best_model.sav', 'rb'))
 
 st.title('Car Price Prediction')
 
