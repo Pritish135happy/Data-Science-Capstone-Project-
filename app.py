@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 #model = joblib.load(r'best_model.sav')
-filename = 'best_model'
+filename = 'best_model.sav'
 model = pickle.load(open(filename, 'rb'))
 
 st.title('Car Price Prediction')
